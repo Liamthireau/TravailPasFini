@@ -20,10 +20,13 @@ use EasyCorp\Bundle\EasyAdminBundle\Router\AdminUrlGenerator;
 use JetBrains\PhpStorm\Pure;
 use phpDocumentor\Reflection\Types\Self_;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
 class CompteCrudController extends AbstractCrudController
 {
     const ACTION_DUPLICATE = 'duplicate';
+
+
 
     public static function getEntityFqcn(): string
     {
